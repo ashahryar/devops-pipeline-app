@@ -1,0 +1,21 @@
+# Workflow name displayed in GitHub Actions
+name: CI/CD Pipeline
+
+# Trigger this workflow on every push to the main branch
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-push:
+    # Use GitHub's hosted Ubuntu runner
+    runs-on: ubuntu-latest
+
+    steps:
+      # Pull your repo code into the runner
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      # Build the Docker image using your Dockerfile
+      - name: Build Docker image
+        run: docker build -t devops-pipeline-app .

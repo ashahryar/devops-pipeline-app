@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps CI/CD Pipeline</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="card">
+
+            <div class="icon">
+                ⚙
+            </div>
+
+            <p class="eyebrow">AWS DEVOPS PROJECT</p>
+
+            <h1>CI/CD Pipeline</h1>
+
+            <p class="description">
+                A containerized Flask application deployed through
+                Docker, GitHub Actions, Terraform, and AWS ECR.
+            </p>
+
+            <div class="status-section">
+
+                <span class="status-dot"></span>
+
+                <span class="status-text">
+                    Application is running
+                </span>
+
+            </div>
+
+            <div class="tech-stack">
+
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+                <span>AWS ECR</span>
+                <span>GitHub Actions</span>
+
+            </div>
+
+            <a href="/health" class="health-link">
+                Check Health Endpoint
+            </a>
+
+        </div>
+
+        <footer>
+            <p>
+                Built as part of a Cloud & DevOps learning project
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
